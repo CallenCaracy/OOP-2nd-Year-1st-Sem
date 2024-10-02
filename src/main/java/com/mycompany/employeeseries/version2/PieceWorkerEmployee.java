@@ -11,7 +11,6 @@ package com.mycompany.employeeseries.version2;
 public class PieceWorkerEmployee extends Employee {
     private int totalPiecesFinished;
     private double ratePerPiece;
-    private double salary = 0;
 
     public PieceWorkerEmployee() {
     }
@@ -55,6 +54,7 @@ public class PieceWorkerEmployee extends Employee {
     }
     
     public double computeSalary() {
+        double salary = 0;
         int hold = this.totalPiecesFinished;
 
         this.ratePerPiece += (hold / 100) * 10;
@@ -63,17 +63,15 @@ public class PieceWorkerEmployee extends Employee {
     }
     
     public void displayPieceWorkerEmployee() {
-        System.out.println("Employee ID: " + super.getEmpID() + 
-                           "\nEmployee Name: " + super.getEmpName() + 
-                           "\ntotalPiecesFinished = " + totalPiecesFinished + 
-                           "\nratePerPiece = " + ratePerPiece +
-                           "\nsalary: " + this.salary);
+        System.out.println("PieceWorkerEmployee: " + super.toString() + 
+                           " totalPiecesFinished = " + totalPiecesFinished + 
+                           " ratePerPiece = " + ratePerPiece +
+                           " salary: " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "PieceWorkerEmployee{" + "Employee ID = " + super.getEmpID() + 
-                                    ", Employee Name = " + super.getEmpName() + 
+        return "PieceWorkerEmployee{ " + super.toString() + 
                                     ", totalPiecesFinished = " + totalPiecesFinished + 
                                     ", ratePerPiece = " + ratePerPiece + '}';
     }

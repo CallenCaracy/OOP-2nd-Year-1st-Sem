@@ -53,6 +53,6 @@ public class Date {
 
     @Override
     public String toString() {
-        return "HireDate{" + "day = " + day + ",\nmonth = " + month + ",\nyear = " + year + '}';
+        return "day = " + day + ",month = " + month + ",year = " + year;
     }
 }

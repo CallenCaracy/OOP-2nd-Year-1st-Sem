@@ -12,7 +12,6 @@ public class HourlyEmployee {
     private double ratePerHour;
     private String empName;
     private int empID;
-    private double salary = 0;
     
     public HourlyEmployee() {
     }
@@ -62,17 +61,18 @@ public class HourlyEmployee {
     }
     
     public double computeSalary(){
+        double salary = 0;
         if(this.totalHoursWorked <= 40){
             salary = this.totalHoursWorked * this.ratePerHour;
         }else if(this.totalHoursWorked > 40){
             float overtimeHours = this.totalHoursWorked - 40;
             salary = (40 * this.ratePerHour) + (overtimeHours * this.ratePerHour * 1.5);
         }
-        return this.salary;
+        return salary;
     }
     
     public void displayHourlyEmployee() {
-        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName());
+        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName() + "\nSalary: " + this.computeSalary());
     }
 
     @Override

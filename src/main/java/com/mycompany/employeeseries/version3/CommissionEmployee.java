@@ -10,7 +10,6 @@ package com.mycompany.employeeseries.version3;
  */
 public class CommissionEmployee extends Employee {
     protected double totalSales;
-    protected double salary;
     
     public CommissionEmployee() {
         super();
@@ -35,6 +34,7 @@ public class CommissionEmployee extends Employee {
     }
     
     public double computeSalary() {
+        double salary;
         double bonus = calculateBonus();
         salary = totalSales + bonus;
         return salary;
@@ -58,15 +58,12 @@ public class CommissionEmployee extends Employee {
                           ",\ndateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
                           ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
                           ",\nTotal Sales = " + this.totalSales +
-                          ",\nSalary = " + this.salary);
+                          ",\nSalary = " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "Commission Employee {" + "empID = " + super.getEmpID() + 
-                          ", Name = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ", dateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ", dateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
-                          ", Total Sales = " + this.totalSales + "\n";
+        return "Commission Employee {" + super.toString() +
+                          ", Total Sales = " + this.totalSales;
     }
 }

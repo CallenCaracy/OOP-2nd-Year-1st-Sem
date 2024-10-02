@@ -10,7 +10,6 @@ package com.mycompany.employeeseries.version2;
  */
 public class CommissionEmployee extends Employee{
     protected double totalSales;
-    protected double salary = 0;
 
     public CommissionEmployee() {
     }
@@ -43,6 +42,7 @@ public class CommissionEmployee extends Employee{
     }
     
     public double computeSalary() {
+        double salary = 0;
         double bonus = calculateBonus();
         salary = totalSales + bonus;
         return salary;
@@ -61,16 +61,14 @@ public class CommissionEmployee extends Employee{
     }
 
     public void displayCommissionEmployee() {
-        System.out.println("Employee ID: " + super.getEmpID() + 
-                           "\nEmployee Name: " + super.getEmpName() + 
-                           "\ntotalSales: " + this.totalSales + 
-                           "\nsalary: " + this.salary);
+        System.out.println("CommissionEmployee: " + super.toString() + 
+                           " totalSales: " + this.totalSales + 
+                           " salary: " + this.computeSalary());
     }
     
     @Override
     public String toString() {
-        return "CommissionEmployee{" + "Employee ID = " + super.getEmpID() + 
-                                   ", Employee Name = " + super.getEmpName() + 
+        return "CommissionEmployee{ " + "Employee: " + super.toString() + 
                                    ", totalSales = " + totalSales + '}';
     }
 

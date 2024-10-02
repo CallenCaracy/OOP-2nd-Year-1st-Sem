@@ -13,7 +13,6 @@ public class PieceWorkerEmployee {
     private double ratePerPiece;
     private String empName;
     private int empID;
-    private double salary = 0;
 
     public PieceWorkerEmployee() {
     }
@@ -63,6 +62,7 @@ public class PieceWorkerEmployee {
     }
     
     public double computeSalary() {
+        double salary;
         int hold = this.totalPiecesFinished;
 
         this.ratePerPiece += (hold / 100) * 10;
@@ -72,7 +72,7 @@ public class PieceWorkerEmployee {
     }
 
     public void displayPieceWorkerEmployee() {
-        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName());
+        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName() + "\nSalary: " + this.computeSalary());
     }
         
     @Override

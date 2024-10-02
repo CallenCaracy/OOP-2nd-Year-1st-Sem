@@ -11,7 +11,7 @@ package com.mycompany.employeeseries.version2;
 public class HourlyEmployee extends Employee {
     private float totalHoursWorked;
     private double ratePerHour;
-    private double salary = 0;
+
 
     public HourlyEmployee() {
     }
@@ -55,29 +55,28 @@ public class HourlyEmployee extends Employee {
     }
     
     public double computeSalary(){
+        double salary = 0;
         if(this.totalHoursWorked <= 40){
             salary = this.totalHoursWorked * this.ratePerHour;
         }else if(this.totalHoursWorked > 40){
             float overtimeHours = this.totalHoursWorked - 40;
             salary = (40 * this.ratePerHour) + (overtimeHours * this.ratePerHour * 1.5);
         }
-        return this.salary;
+        return salary;
     }
     
     public void displayHourlyEmployee() {
-        System.out.println("Employee ID: " + super.getEmpID() + 
-                           "\nEmployee Name: " + super.getEmpName() +
-                           "\nTotalHoursWorked: " + totalHoursWorked + 
-                           "\nRatePerHour: " + ratePerHour + 
-                           "\nSalary: " + salary);
+        System.out.println("HourlyEmployee: " + super.toString() + 
+                           " TotalHoursWorked: " + totalHoursWorked + 
+                           " RatePerHour: " + ratePerHour + 
+                           " Salary: " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "HourlyEmployee{" + "Employee ID = " + super.getEmpID() + 
-                                   ", Employee Name = " + super.getEmpName() + 
-                                   ", totalHoursWorked = " + totalHoursWorked + 
-                                   ", ratePerHour = " + ratePerHour + '}';
+        return "HourlyEmployee{ " + super.toString() + 
+                               ", totalHoursWorked = " + totalHoursWorked + 
+                               ", ratePerHour = " + ratePerHour + '}';
     }
     
     

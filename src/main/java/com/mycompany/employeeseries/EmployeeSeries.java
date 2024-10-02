@@ -23,14 +23,12 @@ public class EmployeeSeries {
 //        System.out.println("HourlyEmployee");
 //        he1.displayHourlyEmployee();
 //        System.out.println(he1.toString());
-//        System.out.println(he1.computeSalary());
 //        
 //        HourlyEmployee he3 = new HourlyEmployee("Jelqer Jason", 10000000);
 //        he3.setRatePerHour(1000);
 //        he3.setTotalHoursWorked(8);
 //        he3.displayHourlyEmployee();
 //        System.out.println(he3.toString());
-//        System.out.println(he3.computeSalary());
 //        
 //        HourlyEmployee he2 = new HourlyEmployee();
 //        he2.setEmpID(911);
@@ -39,7 +37,6 @@ public class EmployeeSeries {
 //        he2.setTotalHoursWorked(30);
 //        he2.displayHourlyEmployee();
 //        System.out.println(he2.toString());
-//        System.out.println(he2.computeSalary());
 //        
 //        
 //        
@@ -49,14 +46,12 @@ public class EmployeeSeries {
 //        PieceWorkerEmployee pwe3 = new PieceWorkerEmployee(300, 20, "Genetics Loitering", 10101010);
 //        pwe3.displayPieceWorkerEmployee();
 //        System.out.println(pwe3.toString());
-//        System.out.println(pwe3.computeSalary());
 //        
 //        PieceWorkerEmployee pwe1 = new PieceWorkerEmployee("Senior Genetics Loitering", 1086541010);
 //        pwe1.setRatePerPiece(10);
 //        pwe1.setTotalPiecesFinished(150);
 //        pwe1.displayPieceWorkerEmployee();
 //        System.out.println(pwe1.toString());
-//        System.out.println(pwe1.computeSalary());
 //        
 //        PieceWorkerEmployee pwe2 = new PieceWorkerEmployee();
 //        pwe2.setEmpID(10142010);
@@ -65,7 +60,6 @@ public class EmployeeSeries {
 //        pwe2.setTotalPiecesFinished(50);
 //        pwe2.displayPieceWorkerEmployee();
 //        System.out.println(pwe2.toString());
-//        System.out.println(pwe2.computeSalary());
 //        
 //        
 //        
@@ -74,18 +68,15 @@ public class EmployeeSeries {
 //        CommissionEmployee ce1 = new CommissionEmployee(1020, "Callen Caracy Poor", 14324);
 //        ce1.displayCommissionEmployee();
 //        System.out.println(ce1.toString());
-//        System.out.println(ce1.computeSalary());
 //        
 //        CommissionEmployee ce2 = new CommissionEmployee(10020, "Callen Caracy Mid", 14324);
 //        ce2.displayCommissionEmployee();
 //        System.out.println(ce2.toString());
-//        System.out.println(ce2.computeSalary());
 //        
 //        CommissionEmployee ce3 = new CommissionEmployee("Callen Caracy Rich", 14324);
 //        ce3.setTotalSales(100020);
 //        ce3.displayCommissionEmployee();
 //        System.out.println(ce3.toString());
-//        System.out.println(ce3.computeSalary());
 //        
 //        CommissionEmployee ce4 = new CommissionEmployee();
 //        ce4.setEmpID(14324);
@@ -93,7 +84,6 @@ public class EmployeeSeries {
 //        ce4.setTotalSales(1000020);
 //        ce4.displayCommissionEmployee();
 //        System.out.println(ce4.toString());
-//        System.out.println(ce4.computeSalary());
 //        
 //        
 //        
@@ -102,19 +92,16 @@ public class EmployeeSeries {
 //        BasedPlusCommissionEmployee bpce1 = new BasedPlusCommissionEmployee(1020, 1000, "Callen Caracy Poor", 14324);
 //        bpce1.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce1.toString());
-//        System.out.println(bpce1.computeSalary());
 //        
 //        BasedPlusCommissionEmployee bpce2 = new BasedPlusCommissionEmployee(10020, 1000, "Callen Caracy Mid", 14324);
 //        bpce2.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce2.toString());
-//        System.out.println(bpce2.computeSalary());
 //        
 //        BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee("Callen Caracy Rich", 14324);
 //        bpce3.setTotalSales(100020);
 //        bpce3.setBaseSalary(1000);
 //        bpce3.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce3.toString());
-//        System.out.println(bpce3.computeSalary());
 //        
 //        BasedPlusCommissionEmployee bpce4 = new BasedPlusCommissionEmployee();
 //        bpce4.setEmpID(14324);
@@ -123,10 +110,9 @@ public class EmployeeSeries {
 //        bpce4.setBaseSalary(1000);
 //        bpce4.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce4.toString());
-//        System.out.println(bpce4.computeSalary());
-        
-        
-        
+//        
+////        
+////        
         //version 2
 //        System.out.println("\n\nHourlyEmployee");
 //        HourlyEmployee emp1 = new HourlyEmployee(1, "John the Bun");
@@ -135,17 +121,20 @@ public class EmployeeSeries {
 //        emp1.computeSalary();
 //        emp1.displayHourlyEmployee();
 //        System.out.println(emp1.toString());
+//        System.out.printf("\n\n");
 //
 //        HourlyEmployee emp2 = new HourlyEmployee(2, "Dover the Lover", 50, 18);
 //        emp2.computeSalary();
 //        emp2.displayHourlyEmployee();
 //        System.out.println(emp2.toString());
-//
+//        System.out.printf("\n\n");
+//        
 //        Employee existingEmp = new Employee(3, "Laun the Launderer");
 //        HourlyEmployee emp3 = new HourlyEmployee(existingEmp, 25, 25);
 //        emp3.computeSalary();
 //        emp3.displayHourlyEmployee();
 //        System.out.println(emp3.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee another = new Employee(4, "Jacker the Jack");
 //        HourlyEmployee emp4 = new HourlyEmployee(another);
@@ -154,6 +143,7 @@ public class EmployeeSeries {
 //        emp4.computeSalary();
 //        emp4.displayHourlyEmployee();
 //        System.out.println(emp4.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee anotherOne = new Employee(5, "Dohn the Goner");
 //        HourlyEmployee emp5 = new HourlyEmployee();
@@ -164,12 +154,12 @@ public class EmployeeSeries {
 //        emp5.computeSalary();
 //        emp5.displayHourlyEmployee();
 //        System.out.println(emp5.toString());
+//        System.out.printf("\n\n");
 //        
-//        
-//        
-//        
-//        
-//        
+////        
+////        
+////        
+////        
 //        System.out.println("\n\nPieceWorkerEmployee");
 //        PieceWorkerEmployee pwe1 = new PieceWorkerEmployee(1, "Draker");
 //        pwe1.setTotalPiecesFinished(120);
@@ -177,12 +167,14 @@ public class EmployeeSeries {
 //        pwe1.computeSalary();
 //        pwe1.displayPieceWorkerEmployee();
 //        System.out.println(pwe1.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee Me = new Employee(2, "Us");
 //        PieceWorkerEmployee pwe2 = new PieceWorkerEmployee(230, 30, Me);
 //        pwe2.computeSalary();
 //        pwe2.displayPieceWorkerEmployee();
 //        System.out.println(pwe2.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee guy = new Employee(3, "Was/Were");
 //        PieceWorkerEmployee pwe3 = new PieceWorkerEmployee();
@@ -193,11 +185,13 @@ public class EmployeeSeries {
 //        pwe3.computeSalary();
 //        pwe3.displayPieceWorkerEmployee();
 //        System.out.println(pwe3.toString());
+//        System.out.printf("\n\n");
 //        
 //        PieceWorkerEmployee pwe4 = new PieceWorkerEmployee(412, 12, 4, "Skibidi");
 //        pwe4.computeSalary();
 //        pwe4.displayPieceWorkerEmployee();
 //        System.out.println(pwe4.toString());
+//        System.out.printf("\n\n");
 //        
 //        PieceWorkerEmployee pwe5 = new PieceWorkerEmployee(7, 231.97);
 //        Employee proo = new Employee(5, "Prouse the Pro");
@@ -206,7 +200,7 @@ public class EmployeeSeries {
 //        pwe5.computeSalary();
 //        pwe5.displayPieceWorkerEmployee();
 //        System.out.println(pwe5.toString());
-//        
+//        System.out.printf("\n\n");
 //        
 //        
 //        
@@ -218,12 +212,14 @@ public class EmployeeSeries {
 //        ce1.computeSalary();
 //        ce1.displayCommissionEmployee();
 //        System.out.println(ce1.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee trabaho = new Employee(2, "Wettering");
 //        CommissionEmployee ce2 = new CommissionEmployee(2500, trabaho);
 //        ce2.computeSalary();
 //        ce2.displayCommissionEmployee();
 //        System.out.println(ce2.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee people = new Employee(3, "I love her so much but she never really loved me");
 //        CommissionEmployee ce3 = new CommissionEmployee();
@@ -233,12 +229,14 @@ public class EmployeeSeries {
 //        ce3.computeSalary();
 //        ce3.displayCommissionEmployee();
 //        System.out.println(ce3.toString());
+//        System.out.printf("\n\n");
 //        
 //        CommissionEmployee ce4 = new CommissionEmployee(4, "Jojo but without Joji");
 //        ce4.setTotalSales(245623);
 //        ce4.computeSalary();
 //        ce4.displayCommissionEmployee();
 //        System.out.println(ce4.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee slave = new Employee(5, "Bene Dover");        
 //        CommissionEmployee ce5 = new CommissionEmployee(12039);
@@ -248,7 +246,7 @@ public class EmployeeSeries {
 //        ce5.computeSalary();
 //        ce5.displayCommissionEmployee();
 //        System.out.println(ce5.toString());
-//        
+//        System.out.printf("\n\n");
 //        
 //
 //
@@ -258,6 +256,7 @@ public class EmployeeSeries {
 //        bpce1.computeSalary();
 //        bpce1.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce1.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee workerer = new Employee(2, "John");
 //        CommissionEmployee test = new CommissionEmployee(200);
@@ -265,12 +264,14 @@ public class EmployeeSeries {
 //        bpce2.computeSalary();
 //        bpce2.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce2.toString());
+//        System.out.printf("\n\n");
 //        
 //        CommissionEmployee tester = new CommissionEmployee(1300);
 //        BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee(240, 3, "Luise", tester);
 //        bpce3.computeSalary();
 //        bpce3.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce3.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee workerers = new Employee(4, "Fourier");
 //        CommissionEmployee testix = new CommissionEmployee(2200);
@@ -282,6 +283,7 @@ public class EmployeeSeries {
 //        bpce4.computeSalary();
 //        bpce4.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce4.toString());
+//        System.out.printf("\n\n");
 //        
 //        Employee workererer = new Employee(5, "Fiber Five");
 //        BasedPlusCommissionEmployee bpce5 = new BasedPlusCommissionEmployee(642);
@@ -291,6 +293,7 @@ public class EmployeeSeries {
 //        bpce5.computeSalary();
 //        bpce5.displayBasedPlusCommissionEmployee();
 //        System.out.println(bpce5.toString());
+//        System.out.printf("\n\n");
 
 
 
@@ -306,6 +309,7 @@ public class EmployeeSeries {
           he1.computeSalary();
           he1.displayHourlyEmployee();
           System.out.println(he1.toString());
+          System.out.printf("\n\n");
           
           Name n2 = new Name("Caracy", "Srven", "Farlen");
           Date db2 = new Date(1, 8, 2005);
@@ -314,6 +318,7 @@ public class EmployeeSeries {
           he2.computeSalary();
           he2.displayHourlyEmployee();
           System.out.println(he2.toString());
+          System.out.printf("\n\n");
           
           HourlyEmployee he3 = new HourlyEmployee();
           he3.setEmpID(3);
@@ -325,7 +330,7 @@ public class EmployeeSeries {
           he3.computeSalary();
           he3.displayHourlyEmployee();
           System.out.println(he3.toString());
-          
+          System.out.printf("\n\n");
 
           
           
@@ -339,6 +344,7 @@ public class EmployeeSeries {
           pwe1.computeSalary();
           pwe1.displayPieceWorkerEmployee();
           System.out.println(pwe1.toString());
+          System.out.printf("\n\n");
           
           Name nPwe2 = new Name("Lone", "Polre", "Loy");
           Date dbPwe2 = new Date(7, 6, 2007);
@@ -347,6 +353,7 @@ public class EmployeeSeries {
           pwe2.computeSalary();
           pwe2.displayPieceWorkerEmployee();
           System.out.println(pwe2.toString());
+          System.out.printf("\n\n");
           
           PieceWorkerEmployee pwe3 = new PieceWorkerEmployee();
           pwe3.setEmpID(3);
@@ -358,7 +365,7 @@ public class EmployeeSeries {
           pwe3.computeSalary();
           pwe3.displayPieceWorkerEmployee();
           System.out.println(pwe3.toString());
-          
+          System.out.printf("\n\n");
           
           
           
@@ -371,6 +378,7 @@ public class EmployeeSeries {
           ce1.computeSalary();
           ce1.displayCommissionEmployee();
           System.out.println(ce1.toString());
+          System.out.printf("\n\n");
           
           Name nCe2 = new Name("Wo", "Wang", "Wa");
           Date dbCe2 = new Date(23, 9, 2003);
@@ -379,6 +387,7 @@ public class EmployeeSeries {
           ce2.computeSalary();
           ce2.displayCommissionEmployee();
           System.out.println(ce2.toString());
+          System.out.printf("\n\n");
           
           CommissionEmployee ce3 = new CommissionEmployee();
           ce3.setEmpID(3);
@@ -389,7 +398,7 @@ public class EmployeeSeries {
           ce3.computeSalary();
           ce3.displayCommissionEmployee();
           System.out.println(ce3.toString());
-          
+          System.out.printf("\n\n");
           
           
           
@@ -403,6 +412,7 @@ public class EmployeeSeries {
           bpce1.computeSalary();
           bpce1.displayBasedPlusCommissionEmployee();
           System.out.println(bpce1.toString());
+          System.out.printf("\n\n");
           
           Name nBpce2 = new Name("Why", "So", "Serious");
           Date dbBpce2 = new Date(23, 12, 2012);
@@ -411,6 +421,7 @@ public class EmployeeSeries {
           bpce2.computeSalary();
           bpce2.displayBasedPlusCommissionEmployee();
           System.out.println(bpce2.toString());
+          System.out.printf("\n\n");
           
           BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee();
           bpce3.setEmpID(3);
@@ -422,5 +433,6 @@ public class EmployeeSeries {
           bpce3.computeSalary();
           bpce3.displayBasedPlusCommissionEmployee();
           System.out.println(bpce3.toString());
+          System.out.printf("\n\n");
     }
 }

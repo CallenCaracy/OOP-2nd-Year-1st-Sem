@@ -13,7 +13,6 @@ public class BasedPlusCommissionEmployee {
     private double baseSalary;
     private String empName;
     private int empID;
-    private double salary = 0;
  
     public BasedPlusCommissionEmployee() {
     }
@@ -63,6 +62,7 @@ public class BasedPlusCommissionEmployee {
     }
 
     public double computeSalary(){
+        double salary;
         double bonus = 0;
         if(this.totalSales < 10000){
             bonus = this.totalSales * 0.05;
@@ -78,7 +78,7 @@ public class BasedPlusCommissionEmployee {
     }
     
     public void displayBasedPlusCommissionEmployee() {
-        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName());
+        System.out.println("Employee ID: " + this.getEmpID() + "\nEmployee Name: " + this.getEmpName() + "\nSalary: " + this.computeSalary());
     }
         
     @Override

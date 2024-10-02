@@ -63,7 +63,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{Employee: " + "\nempID = " + empID + ",\nName = {" + empName.getLname() + ' ' + empName.getFname() + ", " + empName.getMname().charAt(0) + '}' + ",\ndateHired = {" + dateHired.getYear() + '/' + dateHired.getDay() + '/' + dateHired.getMonth() + '}' + ",\ndateBirth = {" + dateBirth.getYear() + '/' + dateBirth.getDay() + '/' + dateBirth.getMonth() + '}';
+        return "Employee ID = " + empID + ",\nName = {" + empName.toString() + '}' + ",\ndateHired = {" + dateHired.toString() + '}' + ",\ndateBirth = {" + dateBirth.toString() + '}';
     }
     
 }

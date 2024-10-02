@@ -48,11 +48,11 @@ public class Name {
     }
     
     public void displayName(){
-        System.out.println("Name = " + lname + fname + ", " + lname.charAt(0) + '.');
+        System.out.println("Name = " + lname + fname + ", " + mname.charAt(0) + '.');
     }
 
     @Override
     public String toString() {
-        return "Name{" + "lname = " + lname + ",\nfname = " + fname + ",\nmname = " + lname.charAt(0) + ".}";
+        return "Last Name = " + lname + ", First Name = " + fname + ", Middle Name = " + mname.charAt(0);
     }
 }

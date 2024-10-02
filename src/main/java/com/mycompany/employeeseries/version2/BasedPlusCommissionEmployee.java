@@ -45,22 +45,20 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee {
     }
     
     public double computeSalary(){
+        double salary;
         salary = this.baseSalary + super.computeSalary();
         return salary;
     }
     
     public void displayBasedPlusCommissionEmployee() {
-        System.out.println("Employee ID: " + getEmpID() + 
-                           "\nEmployee Name: " + getEmpName() + 
-                           "\ntotalSales: " + getTotalSales() + 
-                           "\nbaseSalary:  " + baseSalary + 
-                           "\nsalary: " + salary);
+        System.out.println("BasedPlusCommissionEmployee: " + super.toString() + 
+                           " Base Salary:  " + baseSalary +
+                           " Salary: " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "BasedPlusCommissionEmployee{" + "ID = " + getEmpID() + 
-                                            ", Name = " + getEmpName() + 
+        return "BasedPlusCommissionEmployee{ " + super.toString() + 
                                             ", baseSalary = " + baseSalary + '}';
     }
 }

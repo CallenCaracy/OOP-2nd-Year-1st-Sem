@@ -34,6 +34,7 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee{
     }
     
     public double computeSalary(){
+        double salary;
         salary = this.basedSalary + super.computeSalary();
         return salary;
     }
@@ -45,16 +46,12 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee{
                           ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
                           ",\nTotal Sales = " + this.totalSales +
                           ",\nbasedSalary = " + this.basedSalary +
-                          ",\nSalary = " + this.salary);
+                          ",\nSalary = " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "Commission Employee {" + "empID = " + super.getEmpID() + 
-                          ", Name = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ", dateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ", dateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
-                          ", Total Sales = " + this.totalSales +
+        return "Bassed Plus Commission Employee {" + super.toString() +
                           ", basedSalary = " + this.basedSalary + "\n";
     }
 }

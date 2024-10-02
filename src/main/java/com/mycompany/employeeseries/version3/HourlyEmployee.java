@@ -11,7 +11,6 @@ package com.mycompany.employeeseries.version3;
 public class HourlyEmployee extends Employee {
     private float totalHoursWorked;
     private double ratePerHour;
-    private double salary = 0;
 
     public HourlyEmployee() {
         super();
@@ -46,13 +45,14 @@ public class HourlyEmployee extends Employee {
     }
     
     public double computeSalary(){
+        double salary = 0;
         if(this.totalHoursWorked <= 40){
             salary = this.totalHoursWorked * this.ratePerHour;
         }else if(this.totalHoursWorked > 40){
             float overtimeHours = this.totalHoursWorked - 40;
             salary = (40 * this.ratePerHour) + (overtimeHours * this.ratePerHour * 1.5);
         }
-        return this.salary;
+        return salary;
     }
     
     public void displayHourlyEmployee() {
@@ -62,15 +62,12 @@ public class HourlyEmployee extends Employee {
                           ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
                           ",\nRate Per Hour = " + this.ratePerHour + 
                           ",\nTotal Hours Worked = " + this.totalHoursWorked + 
-                          ",\nSalary = " + this.salary);
+                          ",\nSalary = " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "Hourly Employee {" + "empID = " + super.getEmpID() + 
-                          ", Name = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ", dateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ", dateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
+        return "Hourly Employee {" + super.toString() +
                           ", Rate Per Hour = " + this.ratePerHour + 
                           ", Total Hours Worked = " + this.totalHoursWorked + "\n";
     }
