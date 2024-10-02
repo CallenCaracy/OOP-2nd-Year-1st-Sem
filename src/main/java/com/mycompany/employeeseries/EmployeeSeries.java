@@ -5,26 +5,13 @@
 package com.mycompany.employeeseries;
 
 //Version 1
-//import com.mycompany.employeeseries.version1.HourlyEmployee;
-//import com.mycompany.employeeseries.version1.PieceWorkerEmployee;
-//import com.mycompany.employeeseries.version1.CommissionEmployee;
-//import com.mycompany.employeeseries.version1.BasedPlusCommissionEmployee;
+//import com.mycompany.employeeseries.version1.*;
 
 //Version 2
-//import com.mycompany.employeeseries.version2.Employee;
-//import com.mycompany.employeeseries.version2.HourlyEmployee;
-//import com.mycompany.employeeseries.version2.PieceWorkerEmployee;
-//import com.mycompany.employeeseries.version2.CommissionEmployee;
-//import com.mycompany.employeeseries.version2.BasedPlusCommissionEmployee;
+//import com.mycompany.employeeseries.version2.*;
 
 //Version 3
-import com.mycompany.employeeseries.version3.Name;
-import com.mycompany.employeeseries.version3.Date;
-import com.mycompany.employeeseries.version3.Employee;
-import com.mycompany.employeeseries.version3.HourlyEmployee;
-import com.mycompany.employeeseries.version3.PieceWorkerEmployee;
-import com.mycompany.employeeseries.version3.CommissionEmployee;
-import com.mycompany.employeeseries.version3.BasedPlusCommissionEmployee;
+import com.mycompany.employeeseries.version3.*;
 /**
  *
  * @author clare
