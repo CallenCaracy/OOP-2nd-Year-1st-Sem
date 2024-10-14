@@ -49,17 +49,17 @@ public class Name {
     
     public void displayName(){
         if(mname != null && !mname.isEmpty()){
-            System.out.println(lname + fname + ", " + mname.charAt(0) + '.');
+            System.out.println(lname + ' ' + fname + ", " + mname.charAt(0) + '.');
         }else{
-            System.out.println(lname + fname + ", " + '.');
+            System.out.println(lname + ' ' + fname + ", " + '.');
         }
     }
 
     @Override
     public String toString() {
         if(mname != null && !mname.isEmpty()){
-            return "Last Name = " + lname + ", First Name = " + fname + ", Middle Name = " + mname.charAt(0);
+            return lname + ' ' + fname + ", " + mname.charAt(0) + '.';
         }
-        return "Last Name = " + lname + ", First Name = " + fname; 
+        return lname + ' ' + fname; 
     }
 }

@@ -60,7 +60,7 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public String toString() {
-        return "Commission Employee {" + super.toString() +
-                          ", Total Sales = " + this.totalSales;
+        return "Commission Employee {\n" + super.toString() +
+                          ", \nTotal Sales = " + this.totalSales;
     }
 }

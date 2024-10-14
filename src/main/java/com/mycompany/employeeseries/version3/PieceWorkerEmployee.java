@@ -62,8 +62,8 @@ public class PieceWorkerEmployee extends Employee {
 
     @Override
     public String toString() {
-        return "PieceWorkerEmployee Employee {" + super.toString() +
-                          ", Rate Per Piece = " + this.ratePerPiece + 
-                          ", Total Pieces Finished = " + this.totalPiecesFinished + "\n";
+        return "PieceWorkerEmployee Employee {\n" + super.toString() +
+                          ", \nRate Per Piece = " + this.ratePerPiece + 
+                          ", \nTotal Pieces Finished = " + this.totalPiecesFinished + "\n";
     }
 }

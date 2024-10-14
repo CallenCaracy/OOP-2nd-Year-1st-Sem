@@ -447,7 +447,7 @@ public class EmployeeSeries {
           
           BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee();
           bpce3.setEmpID(3);
-          bpce3.setEmpName(new Name("Sad", "lonely", "Man"));
+          bpce3.setEmpName(new Name("Sad", "", "Man"));
           bpce3.setDateHired(new Date(8, 2, 2023));
           bpce3.setDateBirth(new Date(11, 12, 2002));
           bpce3.setTotalSales(100323.59);

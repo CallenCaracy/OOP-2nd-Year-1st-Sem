@@ -47,7 +47,7 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee{
 
     @Override
     public String toString() {
-        return "Based Plus Commission Employee {" + super.toString() +
-                          ", basedSalary = " + this.basedSalary + "\n";
+        return "Based Plus Commission Employee {\n" + super.toString() +
+                          ", \nbasedSalary = " + this.basedSalary + "\n";
     }
 }
