@@ -39,7 +39,7 @@ public class Name {
         this.mname = mname;
     }
 
-    public String getLname() {
+    public String getLname() {      
         return lname;
     }
 
@@ -48,11 +48,18 @@ public class Name {
     }
     
     public void displayName(){
-        System.out.println("Name = " + lname + fname + ", " + mname.charAt(0) + '.');
+        if(mname != null && !mname.isEmpty()){
+            System.out.println(lname + fname + ", " + mname.charAt(0) + '.');
+        }else{
+            System.out.println(lname + fname + ", " + '.');
+        }
     }
 
     @Override
     public String toString() {
-        return "Last Name = " + lname + ", First Name = " + fname + ", Middle Name = " + mname.charAt(0);
+        if(mname != null && !mname.isEmpty()){
+            return "Last Name = " + lname + ", First Name = " + fname + ", Middle Name = " + mname.charAt(0);
+        }
+        return "Last Name = " + lname + ", First Name = " + fname; 
     }
 }

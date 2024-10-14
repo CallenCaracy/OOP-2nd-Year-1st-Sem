@@ -58,12 +58,18 @@ public class Employee {
     }
     
     public void displayEmployee(){
-        System.out.println("Employee{Employee: " + "\nempID = " + empID + ",\nName = {" + empName.getLname() + ' ' + empName.getFname() + ", " + empName.getMname().charAt(0) + '}' + ",\ndateHired = {" + dateHired.getYear() + '/' + dateHired.getDay() + '/' + dateHired.getMonth() + '}' + ",\ndateBirth = {" + dateBirth.getYear() + '/' + dateBirth.getDay() + '/' + dateBirth.getMonth() + '}');
+        System.out.println("\nempID = " + empID + 
+                ",\nname = " + empName.toString() + 
+                ",\ndateHired = " + dateHired.toString() + 
+                ",\ndateBirth = " + dateBirth.toString());
     }
 
     @Override
     public String toString() {
-        return "Employee ID = " + empID + ",\nName = {" + empName.toString() + '}' + ",\ndateHired = {" + dateHired.toString() + '}' + ",\ndateBirth = {" + dateBirth.toString() + '}';
+        return "Employee ID = " + empID + 
+                ",\nName = {" + empName.toString() + '}' + 
+                ",\ndateHired = {" + dateHired.toString() + '}' + 
+                ",\ndateBirth = {" + dateBirth.toString() + '}';
     }
     
 }

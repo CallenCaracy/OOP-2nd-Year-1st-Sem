@@ -40,18 +40,14 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee{
     }
     
     public void displayBasedPlusCommissionEmployee() {
-       System.out.println("Based Plus Commission Employee {" + "\nempID = " + super.getEmpID() + 
-                          ",\nName = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ",\ndateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
-                          ",\nTotal Sales = " + this.totalSales +
+       System.out.println(super.toString() +
                           ",\nbasedSalary = " + this.basedSalary +
                           ",\nSalary = " + this.computeSalary());
     }
 
     @Override
     public String toString() {
-        return "Bassed Plus Commission Employee {" + super.toString() +
+        return "Based Plus Commission Employee {" + super.toString() +
                           ", basedSalary = " + this.basedSalary + "\n";
     }
 }

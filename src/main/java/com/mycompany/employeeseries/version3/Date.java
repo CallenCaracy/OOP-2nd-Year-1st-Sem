@@ -48,7 +48,7 @@ public class Date {
     }
     
     public void displayName(){
-        System.out.println("Date Hired: " + year + '/' + day + '/' + month);
+        System.out.println(year + '/' + day + '/' + month);
     }
 
     @Override

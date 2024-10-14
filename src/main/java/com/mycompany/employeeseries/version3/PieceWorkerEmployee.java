@@ -54,10 +54,7 @@ public class PieceWorkerEmployee extends Employee {
     }
     
     public void displayPieceWorkerEmployee() {
-       System.out.println("PieceWorkerEmployee Employee {" + "\nempID = " + super.getEmpID() + 
-                          ",\nName = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ",\ndateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
+       System.out.println(super.toString() +
                           ",\nRate Per Piece = " + this.ratePerPiece + 
                           ",\nTotal Pieces Finished = " + this.totalPiecesFinished + 
                           ",\nSalary = " + this.computeSalary());

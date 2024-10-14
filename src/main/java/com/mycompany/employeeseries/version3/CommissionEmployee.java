@@ -53,10 +53,7 @@ public class CommissionEmployee extends Employee {
     }
     
     public void displayCommissionEmployee() {
-       System.out.println("Commission Employee {" + "\nempID = " + super.getEmpID() + 
-                          ",\nName = {" + super.getEmpName().getLname() + ' ' + super.getEmpName().getFname() + ", " + super.getEmpName().getMname().charAt(0) + '}' + 
-                          ",\ndateHired = {" + super.getDateHired().getYear() + '/' + super.getDateHired().getDay() + '/' + super.getDateHired().getMonth() + '}' + 
-                          ",\ndateBirth = {" + super.getDateBirth().getYear() + '/' + super.getDateBirth().getDay() + '/' + super.getDateBirth().getMonth() + '}' + 
+       System.out.println(super.toString() +
                           ",\nTotal Sales = " + this.totalSales +
                           ",\nSalary = " + this.computeSalary());
     }
