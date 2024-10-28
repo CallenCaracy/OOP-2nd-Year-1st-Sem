@@ -10,8 +10,9 @@ package com.mycompany.employeeseries;
 //Version 2
 //import com.mycompany.employeeseries.version2.*;
 
-//Version 3
+//Version 3 & 4
 import com.mycompany.employeeseries.version3.*;
+import com.mycompany.employeeseries.version4.EmployeeRoster;
 /**
  *
  * @author clare
@@ -300,29 +301,183 @@ public class EmployeeSeries {
 
 
           //Version 3
-          System.out.println("\n\nHourly Employee");
+//          System.out.println("\n\nHourly Employee");
+//          Name n1 = new Name("Clarence", "Ayuban", "Diangco");
+//          Date db1 = new Date(16, 4, 2005);
+//          Date dh1 = new Date(29, 6, 2026);
+//          Employee emp1 = new Employee(1, n1, dh1, db1);
+//          HourlyEmployee he1 = new HourlyEmployee(emp1, 63, 52.84);
+//          he1.computeSalary();
+//          System.out.printf("\n\n");
+//          he1.displayHourlyEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(he1.toString());
+//          System.out.printf("\n\n");
+//          
+//          Name n2 = new Name("Caracy", "Srven", "Farlen");
+//          Date db2 = new Date(1, 8, 2005);
+//          Date dh2 = new Date(29, 6, 2026);
+//          HourlyEmployee he2 = new HourlyEmployee(2, n2, dh2, db2, 73, 55.21);
+//          he2.computeSalary();
+//          System.out.printf("\n\n");
+//          he2.displayHourlyEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(he2.toString());
+//          System.out.printf("\n\n");
+//          
+//          HourlyEmployee he3 = new HourlyEmployee();
+//          he3.setEmpID(3);
+//          he3.setEmpName(new Name("Larcy", "Len", "Verli"));
+//          he3.setDateHired(new Date(18, 3, 2022));
+//          he3.setDateBirth(new Date(22, 12, 2004));
+//          he3.setRatePerHour(60.59);
+//          he3.setTotalHoursWorked(52);
+//          he3.computeSalary();
+//          System.out.printf("\n\n");
+//          he3.displayHourlyEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(he3.toString());
+//          System.out.printf("\n\n");
+//
+//          
+//          
+//          
+//          System.out.println("\n\nPiece Worker Employee");
+//          Name nPwe1 = new Name("Callen", "Ayuban", "Diangco");
+//          Date dbPwe1 = new Date(28, 9, 2002);
+//          Date dhPwe1 = new Date(5, 3, 2025);
+//          Employee empPwe1 = new Employee(1, nPwe1, dhPwe1, dbPwe1);
+//          PieceWorkerEmployee pwe1 = new PieceWorkerEmployee(empPwe1, 95.99, 46);
+//          pwe1.computeSalary();
+//          System.out.printf("\n\n");
+//          pwe1.displayPieceWorkerEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(pwe1.toString());
+//          System.out.printf("\n\n");
+//          
+//          Name nPwe2 = new Name("Lone", "Polre", "Loy");
+//          Date dbPwe2 = new Date(7, 6, 2007);
+//          Date dhPwe2 = new Date(21, 2, 2022);
+//          PieceWorkerEmployee pwe2 = new PieceWorkerEmployee(2, nPwe2, dhPwe2, dbPwe2, 55.21, 73);
+//          pwe2.computeSalary();
+//          System.out.printf("\n\n");
+//          pwe2.displayPieceWorkerEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(pwe2.toString());
+//          System.out.printf("\n\n");
+//          
+//          PieceWorkerEmployee pwe3 = new PieceWorkerEmployee();
+//          pwe3.setEmpID(3);
+//          pwe3.setEmpName(new Name("Lark", "Tart", "Verli"));
+//          pwe3.setDateHired(new Date(3, 2, 2029));
+//          pwe3.setDateBirth(new Date(29, 11, 2006));
+//          pwe3.setRatePerPiece(49.59);
+//          pwe3.setTotalPiecesFinished(79);
+//          pwe3.computeSalary();
+//          System.out.printf("\n\n");
+//          pwe3.displayPieceWorkerEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(pwe3.toString());
+//          System.out.printf("\n\n");
+//          
+//          
+//          
+//          System.out.println("\n\nCommission Employee");
+//          Name nCe1 = new Name("Wo", "Wang", "Wa");
+//          Date dbCe1 = new Date(30, 1, 2002);
+//          Date dhCe1 = new Date(4, 7, 2028);
+//          Employee empCe1 = new Employee(1, nCe1, dhCe1, dbCe1);
+//          CommissionEmployee ce1 = new CommissionEmployee(empCe1, 95.99);
+//          ce1.computeSalary();
+//          System.out.printf("\n\n");
+//          ce1.displayCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(ce1.toString());
+//          System.out.printf("\n\n");
+//          
+//          Name nCe2 = new Name("Wo", "Wang", "Wa");
+//          Date dbCe2 = new Date(23, 9, 2003);
+//          Date dhCe2 = new Date(14, 6, 2024);
+//          CommissionEmployee ce2 = new CommissionEmployee(2, nCe2, dhCe2, dbCe2, 4432155.21);
+//          ce2.computeSalary();
+//          System.out.printf("\n\n");
+//          ce2.displayCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(ce2.toString());
+//          System.out.printf("\n\n");
+//          
+//          CommissionEmployee ce3 = new CommissionEmployee();
+//          ce3.setEmpID(3);
+//          ce3.setEmpName(new Name("Sad", "lonely", "Man"));
+//          ce3.setDateHired(new Date(8, 2, 2023));
+//          ce3.setDateBirth(new Date(11, 12, 2002));
+//          ce3.setTotalSales(100323.59);
+//          ce3.computeSalary();
+//          System.out.printf("\n\n");
+//          ce3.displayCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(ce3.toString());
+//          System.out.printf("\n\n");
+//          
+//          
+//          
+//          System.out.println("\n\nBased Plus Commission Employee");
+//          Name nBpce1 = new Name("Jonkler", "Bzzrrr", "TchkTchk");
+//          Date dbBpce1 = new Date(12, 9, 2022);
+//          Date dhBpce1 = new Date(30, 3, 2048);
+//          Employee empBpce1 = new Employee(1, nBpce1, dhBpce1, dbBpce1);
+//          CommissionEmployee someone = new CommissionEmployee(empBpce1, 300);
+//          BasedPlusCommissionEmployee bpce1 = new BasedPlusCommissionEmployee(someone, 125.99);
+//          bpce1.computeSalary();
+//          System.out.printf("\n\n");
+//          bpce1.displayBasedPlusCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(bpce1.toString());
+//          System.out.printf("\n\n");
+//          
+//          Name nBpce2 = new Name("Why", "So", "Serious");
+//          Date dbBpce2 = new Date(23, 12, 2012);
+//          Date dhBpce2 = new Date(14, 2, 2032);
+//          BasedPlusCommissionEmployee bpce2 = new BasedPlusCommissionEmployee(2, nBpce2, dhBpce2, dbBpce2, 4432255.21, 49.22);
+//          bpce2.computeSalary();
+//          System.out.printf("\n\n");
+//          bpce2.displayBasedPlusCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(bpce2.toString());
+//          System.out.printf("\n\n");
+//          
+//          BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee();
+//          bpce3.setEmpID(3);
+//          bpce3.setEmpName(new Name("Sad", "", "Man"));
+//          bpce3.setDateHired(new Date(8, 2, 2023));
+//          bpce3.setDateBirth(new Date(11, 12, 2002));
+//          bpce3.setTotalSales(100323.59);
+//          bpce3.setBasedSalary(89.23);
+//          bpce3.computeSalary();
+//          System.out.printf("\n\n");
+//          bpce3.displayBasedPlusCommissionEmployee();
+//          System.out.printf("\n\n");
+//          System.out.println(bpce3.toString());
+//          System.out.printf("\n\n");
+          
+          
+          //Version4
+          EmployeeRoster ER = new EmployeeRoster(20);
+
           Name n1 = new Name("Clarence", "Ayuban", "Diangco");
           Date db1 = new Date(16, 4, 2005);
           Date dh1 = new Date(29, 6, 2026);
           Employee emp1 = new Employee(1, n1, dh1, db1);
           HourlyEmployee he1 = new HourlyEmployee(emp1, 63, 52.84);
           he1.computeSalary();
-          System.out.printf("\n\n");
-          he1.displayHourlyEmployee();
-          System.out.printf("\n\n");
-          System.out.println(he1.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(he1);
           
           Name n2 = new Name("Caracy", "Srven", "Farlen");
           Date db2 = new Date(1, 8, 2005);
           Date dh2 = new Date(29, 6, 2026);
           HourlyEmployee he2 = new HourlyEmployee(2, n2, dh2, db2, 73, 55.21);
           he2.computeSalary();
-          System.out.printf("\n\n");
-          he2.displayHourlyEmployee();
-          System.out.printf("\n\n");
-          System.out.println(he2.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(he2);
           
           HourlyEmployee he3 = new HourlyEmployee();
           he3.setEmpID(3);
@@ -332,131 +487,92 @@ public class EmployeeSeries {
           he3.setRatePerHour(60.59);
           he3.setTotalHoursWorked(52);
           he3.computeSalary();
-          System.out.printf("\n\n");
-          he3.displayHourlyEmployee();
-          System.out.printf("\n\n");
-          System.out.println(he3.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(he3);
 
           
           
-          
-          System.out.println("\n\nPiece Worker Employee");
+         
           Name nPwe1 = new Name("Callen", "Ayuban", "Diangco");
           Date dbPwe1 = new Date(28, 9, 2002);
           Date dhPwe1 = new Date(5, 3, 2025);
-          Employee empPwe1 = new Employee(1, nPwe1, dhPwe1, dbPwe1);
+          Employee empPwe1 = new Employee(4, nPwe1, dhPwe1, dbPwe1);
           PieceWorkerEmployee pwe1 = new PieceWorkerEmployee(empPwe1, 95.99, 46);
           pwe1.computeSalary();
-          System.out.printf("\n\n");
-          pwe1.displayPieceWorkerEmployee();
-          System.out.printf("\n\n");
-          System.out.println(pwe1.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(pwe1);
           
           Name nPwe2 = new Name("Lone", "Polre", "Loy");
           Date dbPwe2 = new Date(7, 6, 2007);
           Date dhPwe2 = new Date(21, 2, 2022);
-          PieceWorkerEmployee pwe2 = new PieceWorkerEmployee(2, nPwe2, dhPwe2, dbPwe2, 55.21, 73);
+          PieceWorkerEmployee pwe2 = new PieceWorkerEmployee(5, nPwe2, dhPwe2, dbPwe2, 55.21, 73);
           pwe2.computeSalary();
-          System.out.printf("\n\n");
-          pwe2.displayPieceWorkerEmployee();
-          System.out.printf("\n\n");
-          System.out.println(pwe2.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(pwe2);
           
           PieceWorkerEmployee pwe3 = new PieceWorkerEmployee();
-          pwe3.setEmpID(3);
+          pwe3.setEmpID(6);
           pwe3.setEmpName(new Name("Lark", "Tart", "Verli"));
           pwe3.setDateHired(new Date(3, 2, 2029));
           pwe3.setDateBirth(new Date(29, 11, 2006));
           pwe3.setRatePerPiece(49.59);
           pwe3.setTotalPiecesFinished(79);
           pwe3.computeSalary();
-          System.out.printf("\n\n");
-          pwe3.displayPieceWorkerEmployee();
-          System.out.printf("\n\n");
-          System.out.println(pwe3.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(pwe3);
           
           
           
-          System.out.println("\n\nCommission Employee");
           Name nCe1 = new Name("Wo", "Wang", "Wa");
           Date dbCe1 = new Date(30, 1, 2002);
           Date dhCe1 = new Date(4, 7, 2028);
-          Employee empCe1 = new Employee(1, nCe1, dhCe1, dbCe1);
+          Employee empCe1 = new Employee(7, nCe1, dhCe1, dbCe1);
           CommissionEmployee ce1 = new CommissionEmployee(empCe1, 95.99);
           ce1.computeSalary();
-          System.out.printf("\n\n");
-          ce1.displayCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(ce1.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(ce1);
           
           Name nCe2 = new Name("Wo", "Wang", "Wa");
           Date dbCe2 = new Date(23, 9, 2003);
           Date dhCe2 = new Date(14, 6, 2024);
-          CommissionEmployee ce2 = new CommissionEmployee(2, nCe2, dhCe2, dbCe2, 4432155.21);
+          CommissionEmployee ce2 = new CommissionEmployee(8, nCe2, dhCe2, dbCe2, 4432155.21);
           ce2.computeSalary();
-          System.out.printf("\n\n");
-          ce2.displayCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(ce2.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(ce2);
           
           CommissionEmployee ce3 = new CommissionEmployee();
-          ce3.setEmpID(3);
+          ce3.setEmpID(9);
           ce3.setEmpName(new Name("Sad", "lonely", "Man"));
           ce3.setDateHired(new Date(8, 2, 2023));
           ce3.setDateBirth(new Date(11, 12, 2002));
           ce3.setTotalSales(100323.59);
           ce3.computeSalary();
-          System.out.printf("\n\n");
-          ce3.displayCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(ce3.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(ce3);
           
           
           
-          System.out.println("\n\nBased Plus Commission Employee");
           Name nBpce1 = new Name("Jonkler", "Bzzrrr", "TchkTchk");
           Date dbBpce1 = new Date(12, 9, 2022);
           Date dhBpce1 = new Date(30, 3, 2048);
-          Employee empBpce1 = new Employee(1, nBpce1, dhBpce1, dbBpce1);
+          Employee empBpce1 = new Employee(10, nBpce1, dhBpce1, dbBpce1);
           CommissionEmployee someone = new CommissionEmployee(empBpce1, 300);
           BasedPlusCommissionEmployee bpce1 = new BasedPlusCommissionEmployee(someone, 125.99);
           bpce1.computeSalary();
-          System.out.printf("\n\n");
-          bpce1.displayBasedPlusCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(bpce1.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(bpce1);
           
           Name nBpce2 = new Name("Why", "So", "Serious");
           Date dbBpce2 = new Date(23, 12, 2012);
           Date dhBpce2 = new Date(14, 2, 2032);
-          BasedPlusCommissionEmployee bpce2 = new BasedPlusCommissionEmployee(2, nBpce2, dhBpce2, dbBpce2, 4432255.21, 49.22);
+          BasedPlusCommissionEmployee bpce2 = new BasedPlusCommissionEmployee(11, nBpce2, dhBpce2, dbBpce2, 4432255.21, 49.22);
           bpce2.computeSalary();
-          System.out.printf("\n\n");
-          bpce2.displayBasedPlusCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(bpce2.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(bpce2);
           
           BasedPlusCommissionEmployee bpce3 = new BasedPlusCommissionEmployee();
-          bpce3.setEmpID(3);
+          bpce3.setEmpID(12);
           bpce3.setEmpName(new Name("Sad", "", "Man"));
           bpce3.setDateHired(new Date(8, 2, 2023));
           bpce3.setDateBirth(new Date(11, 12, 2002));
           bpce3.setTotalSales(100323.59);
           bpce3.setBasedSalary(89.23);
           bpce3.computeSalary();
-          System.out.printf("\n\n");
-          bpce3.displayBasedPlusCommissionEmployee();
-          System.out.printf("\n\n");
-          System.out.println(bpce3.toString());
-          System.out.printf("\n\n");
+          ER.addEmployee(bpce3);
+          
+          ER.displayAllEmployee();
+          System.out.println(ER.removeEmployee(11));
+          ER.displayAllEmployee();
     }
 }
