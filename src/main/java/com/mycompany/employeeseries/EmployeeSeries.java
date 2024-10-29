@@ -571,8 +571,16 @@ public class EmployeeSeries {
           bpce3.computeSalary();
           ER.addEmployee(bpce3);
           
+          System.out.println(ER.countBPCE());
+          System.out.println(ER.countCE());
+          System.out.println(ER.countHE());
+          System.out.println(ER.countPWE());
           ER.displayAllEmployee();
           System.out.println(ER.removeEmployee(11));
           ER.displayAllEmployee();
+          System.out.println(ER.countBPCE());
+          System.out.println(ER.countCE());
+          System.out.println(ER.countHE());
+          System.out.println(ER.countPWE());
     }
 }

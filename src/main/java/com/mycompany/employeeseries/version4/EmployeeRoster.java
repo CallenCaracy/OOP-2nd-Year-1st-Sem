@@ -61,7 +61,7 @@ public class EmployeeRoster {
     public int countCE(){
         int countCE = 0;
         for(int i = 0; i < count; i++){
-            if(this.empList[i] instanceof CommissionEmployee){
+            if(this.empList[i] instanceof CommissionEmployee && !(this.empList[i] instanceof BasedPlusCommissionEmployee)){
                 countCE++;
             }
         }
