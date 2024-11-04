@@ -10,9 +10,10 @@ package com.mycompany.employeeseries;
 //Version 2
 //import com.mycompany.employeeseries.version2.*;
 
-//Version 3 & 4
+//Version 3, 4, & 5
 import com.mycompany.employeeseries.version3.*;
-import com.mycompany.employeeseries.version4.EmployeeRoster;
+//import com.mycompany.employeeseries.version4.EmployeeRoster;
+import com.mycompany.employeeseries.version5.EmployeeRoster;
 /**
  *
  * @author clare
@@ -461,8 +462,9 @@ public class EmployeeSeries {
 //          System.out.printf("\n\n");
           
           
-          //Version4
-          EmployeeRoster ER = new EmployeeRoster(20);
+          //Version4 & 5
+//          EmployeeRoster ER = new EmployeeRoster(20);
+          EmployeeRoster ER = new EmployeeRoster();
 
           Name n1 = new Name("Clarence", "Ayuban", "Diangco");
           Date db1 = new Date(16, 4, 2005);
