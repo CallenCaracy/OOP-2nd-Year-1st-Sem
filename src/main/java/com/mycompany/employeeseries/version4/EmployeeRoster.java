@@ -138,6 +138,7 @@ public class EmployeeRoster {
     
     public void displayAllEmployeeV2(){
         if(this.count > 0){
+            System.out.printf("___________________________________________________________________________________________________\n");
             System.out.printf("|   ID   |         NAME         |      DATE BIRTH      |   SALARY   |      TYPE OF EMPLOYEE       |\n");
             for(int i = 0; i < this.count; i++){
                 System.out.printf("|   %-4d | %-20s | %-20s | %-27s |\n",
@@ -151,6 +152,7 @@ public class EmployeeRoster {
     
     public void displayAllEmployee(){
         if(this.count > 0){
+            System.out.printf("___________________________________________________________________________________________________\n");
             System.out.printf("|   ID   |         NAME         |      DATE BIRTH      |   SALARY   |      TYPE OF EMPLOYEE       |\n");
             for(int i = 0; i < this.count; i++){
                 if(this.empList[i] instanceof HourlyEmployee){
@@ -183,6 +185,7 @@ public class EmployeeRoster {
                     this.empList[i].getClass().getSimpleName());
                 }
             }
+            System.out.printf("___________________________________________________________________________________________________\n");
         }
     }
 }
