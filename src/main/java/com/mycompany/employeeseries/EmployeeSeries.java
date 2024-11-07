@@ -11,9 +11,13 @@ package com.mycompany.employeeseries;
 //import com.mycompany.employeeseries.version2.*;
 
 //Version 3, 4, & 5
-import com.mycompany.employeeseries.version3.*;
+//import com.mycompany.employeeseries.version3.*;
 //import com.mycompany.employeeseries.version4.EmployeeRoster;
-import com.mycompany.employeeseries.version5.EmployeeRoster;
+//import com.mycompany.employeeseries.version5.EmployeeRoster;
+
+//Version 6
+import com.mycompany.employeeseries.version6.*;
+
 /**
  *
  * @author clare
@@ -462,15 +466,14 @@ public class EmployeeSeries {
 //          System.out.printf("\n\n");
           
           
-          //Version4 & 5
+          //Version 4, 5, 6;
 //          EmployeeRoster ER = new EmployeeRoster(20);
           EmployeeRoster ER = new EmployeeRoster();
 
           Name n1 = new Name("Clarence", "Ayuban", "Diangco");
           Date db1 = new Date(16, 4, 2005);
           Date dh1 = new Date(29, 6, 2026);
-          Employee emp1 = new Employee(1, n1, dh1, db1);
-          HourlyEmployee he1 = new HourlyEmployee(emp1, 63, 52.84);
+          HourlyEmployee he1 = new HourlyEmployee(1, n1, dh1, db1, 63, 52.84);
           he1.computeSalary();
           ER.addEmployee(he1);
           
@@ -497,8 +500,7 @@ public class EmployeeSeries {
           Name nPwe1 = new Name("Callen", "Ayuban", "Diangco");
           Date dbPwe1 = new Date(28, 9, 2002);
           Date dhPwe1 = new Date(5, 3, 2025);
-          Employee empPwe1 = new Employee(4, nPwe1, dhPwe1, dbPwe1);
-          PieceWorkerEmployee pwe1 = new PieceWorkerEmployee(empPwe1, 95.99, 46);
+          PieceWorkerEmployee pwe1 = new PieceWorkerEmployee(4, nPwe1, dhPwe1, dbPwe1, 95.99, 46);
           pwe1.computeSalary();
           ER.addEmployee(pwe1);
           
@@ -524,8 +526,7 @@ public class EmployeeSeries {
           Name nCe1 = new Name("Wo", "Wang", "Wa");
           Date dbCe1 = new Date(30, 1, 2002);
           Date dhCe1 = new Date(4, 7, 2028);
-          Employee empCe1 = new Employee(7, nCe1, dhCe1, dbCe1);
-          CommissionEmployee ce1 = new CommissionEmployee(empCe1, 95.99);
+          CommissionEmployee ce1 = new CommissionEmployee(7, nCe1, dhCe1, dbCe1, 95.99);
           ce1.computeSalary();
           ER.addEmployee(ce1);
           
@@ -550,8 +551,7 @@ public class EmployeeSeries {
           Name nBpce1 = new Name("Jonkler", "Bzzrrr", "TchkTchk");
           Date dbBpce1 = new Date(12, 9, 2022);
           Date dhBpce1 = new Date(30, 3, 2048);
-          Employee empBpce1 = new Employee(10, nBpce1, dhBpce1, dbBpce1);
-          CommissionEmployee someone = new CommissionEmployee(empBpce1, 300);
+          CommissionEmployee someone = new CommissionEmployee(10, nBpce1, dhBpce1, dbBpce1, 300);
           BasedPlusCommissionEmployee bpce1 = new BasedPlusCommissionEmployee(someone, 125.99);
           bpce1.computeSalary();
           ER.addEmployee(bpce1);
