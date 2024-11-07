@@ -45,7 +45,7 @@ public class HourlyEmployee extends Employee {
     }
     
     @Override
-    public double computeSalary(){
+    public final double computeSalary(){
         if(this.totalHoursWorked <= 40){
             return this.totalHoursWorked * this.ratePerHour;
         }else if(this.totalHoursWorked > 40){
@@ -56,7 +56,7 @@ public class HourlyEmployee extends Employee {
     }
     
     @Override
-    public void displayEmployee() {
+    public final void displayEmployee() {
        System.out.println(super.toString() +
                           ",\nRate Per Hour = " + this.ratePerHour + 
                           ",\nTotal Hours Worked = " + this.totalHoursWorked + 

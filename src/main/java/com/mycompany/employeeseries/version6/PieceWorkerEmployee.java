@@ -45,7 +45,7 @@ public class PieceWorkerEmployee extends Employee {
     }
     
     @Override
-    public double computeSalary() {
+    public final double computeSalary() {
         int hold = this.totalPiecesFinished;
 
         this.ratePerPiece += (hold / 100) * 10;
@@ -53,7 +53,7 @@ public class PieceWorkerEmployee extends Employee {
     }
     
     @Override
-    public void displayEmployee() {
+    public final void displayEmployee() {
        System.out.println(super.toString() +
                           ",\nRate Per Piece = " + this.ratePerPiece + 
                           ",\nTotal Pieces Finished = " + this.totalPiecesFinished + 

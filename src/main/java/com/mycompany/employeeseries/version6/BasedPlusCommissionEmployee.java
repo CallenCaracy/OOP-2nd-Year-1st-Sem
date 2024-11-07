@@ -34,12 +34,12 @@ public class BasedPlusCommissionEmployee extends CommissionEmployee{
     }
     
     @Override
-    public double computeSalary(){
+    public final double computeSalary(){
         return this.basedSalary + super.computeSalary();
     }
     
     @Override
-    public void displayEmployee() {
+    public final void displayEmployee() {
        System.out.println(super.toString() +
                           ",\nbasedSalary = " + this.basedSalary +
                           ",\nSalary = " + this.computeSalary());
