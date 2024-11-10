@@ -16,7 +16,10 @@ package com.mycompany.employeeseries;
 //import com.mycompany.employeeseries.version5.EmployeeRoster;
 
 //Version 6
-import com.mycompany.employeeseries.version6.*;
+//import com.mycompany.employeeseries.version6.*;
+
+//Version 7
+import com.mycompany.employeeseries.version7.*;
 
 /**
  *
@@ -466,7 +469,7 @@ public class EmployeeSeries {
 //          System.out.printf("\n\n");
           
           
-          //Version 4, 5, 6;
+          //Version 4, 5, 6, and 7
 //          EmployeeRoster ER = new EmployeeRoster(20);
           EmployeeRoster ER = new EmployeeRoster();
 
