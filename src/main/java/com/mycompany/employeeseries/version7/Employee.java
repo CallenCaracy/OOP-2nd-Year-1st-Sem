@@ -8,7 +8,7 @@ package com.mycompany.employeeseries.version7;
  *
  * @author clare
  */
-public abstract class Employee {
+public abstract class Employee implements ComputeSalary{
     private int empID;
     private Name empName;
     private Date dateHired;

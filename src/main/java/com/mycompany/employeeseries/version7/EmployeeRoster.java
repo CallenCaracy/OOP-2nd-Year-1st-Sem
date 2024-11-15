@@ -140,36 +140,13 @@ public class EmployeeRoster {
         if(this.empList.size() > 0){
             System.out.printf("___________________________________________________________________________________________________\n");
             System.out.printf("|   ID   |         NAME         |      DATE BIRTH      |   SALARY   |      TYPE OF EMPLOYEE       |\n");
-            for(int i = 0; i < this.empList.size(); i++){
-                if(this.empList.get(i) instanceof HourlyEmployee){
-                    System.out.printf("|   %-4d | %-20s | %-20s | %-10.2f | %-27s |\n",
-                    this.empList.get(i).getEmpID(),
-                    this.empList.get(i).getEmpName(),
-                    this.empList.get(i).getDateBirth(),
-                    ((HourlyEmployee)this.empList.get(i)).computeSalary(),
-                    this.empList.get(i).getClass().getSimpleName());
-                }else if(this.empList.get(i) instanceof CommissionEmployee){
-                    System.out.printf("|   %-4d | %-20s | %-20s | %-10.2f | %-27s |\n",
-                    this.empList.get(i).getEmpID(),
-                    this.empList.get(i).getEmpName(),
-                    this.empList.get(i).getDateBirth(),
-                    ((CommissionEmployee)this.empList.get(i)).computeSalary(),
-                    this.empList.get(i).getClass().getSimpleName());
-                }else if(this.empList.get(i) instanceof BasedPlusCommissionEmployee){
-                    System.out.printf("|   %-4d | %-20s | %-20s | %-10.2f | %-27s |\n",
-                    this.empList.get(i).getEmpID(),
-                    this.empList.get(i).getEmpName(),
-                    this.empList.get(i).getDateBirth(),
-                    ((BasedPlusCommissionEmployee)this.empList.get(i)).computeSalary(),
-                    this.empList.get(i).getClass().getSimpleName());
-                }else if(this.empList.get(i) instanceof PieceWorkerEmployee){
-                    System.out.printf("|   %-4d | %-20s | %-20s | %-10.2f | %-27s |\n",
-                    this.empList.get(i).getEmpID(),
-                    this.empList.get(i).getEmpName(),
-                    this.empList.get(i).getDateBirth(),
-                    ((PieceWorkerEmployee)this.empList.get(i)).computeSalary(),
-                    this.empList.get(i).getClass().getSimpleName());
-                }
+            for(Employee emp : empList){
+                System.out.printf("|   %-4d | %-20s | %-20s | %-10.2f | %-27s |\n",
+                emp.getEmpID(),
+                emp.getEmpName(),
+                emp.getDateBirth(),
+                emp.computeSalary(),
+                emp.getClass().getSimpleName());
             }
             System.out.printf("___________________________________________________________________________________________________\n");
         }
